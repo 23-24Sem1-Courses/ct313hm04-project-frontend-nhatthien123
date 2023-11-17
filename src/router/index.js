@@ -1,5 +1,5 @@
 import { createWebHistory, createRouter } from 'vue-router';
-import ConmicList from '@/views/ComicList.vue';
+import ComicList from '@/views/ComicList.vue';
 const routes = [
     {
         path: '/',
