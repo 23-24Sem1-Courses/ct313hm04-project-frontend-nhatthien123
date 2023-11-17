@@ -3,7 +3,7 @@ import { ref } from 'vue';
 import ComicForm from '@/components/ContactForm.vue';
 import comicsService from '@/services/comics.service';
 
-const contact = ref(null);
+const comic = ref(null);
 const message = ref('');
 
 async function onCreateComic(comic) {

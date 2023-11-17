@@ -35,15 +35,11 @@
     import { ref } from 'vue';
     import * as yup from 'yup';
     import { Form, Field, ErrorMessage } from 'vee-validate';
-    import ComicForm from '@/components/ComicForm.vue';
-    import comicsService from '@/services/comics.service';
+    
     const props = defineProps({
         initialContact: { type: Object, required: true },
     });
-    const $router = useRouter();
-    const $route = useRoute();
-    const contact = ref(null);
-    const message = ref('');
+    
     const $emit = defineEmits(['submit:comic', 'delete:comic']);
     const comicFormSchema = yup.object().shape({
         name: yup
