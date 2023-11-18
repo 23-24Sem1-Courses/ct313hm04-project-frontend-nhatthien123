@@ -3,7 +3,7 @@
     import * as yup from 'yup';
     import { Form, Field, ErrorMessage } from 'vee-validate';
     const props = defineProps({
-        initialContact: { type: Object, required: true },
+        initialComic: { type: Object, required: true },
     });
     const $emit = defineEmits(['submit:comic', 'delete:comic']);
     const comicFormSchema = yup.object().shape({

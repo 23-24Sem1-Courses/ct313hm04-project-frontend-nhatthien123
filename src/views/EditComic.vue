@@ -16,13 +16,15 @@
             <ErrorMessage name="chapter" class="error-feedback" />
         </div>
         <div class="form-group">
-            <button class="btn btn-primary">Lưu</button>
+            <button class="btn fa-floppy-disk">Lưu</button>
+            <!-- <i class="fa-duotone "></i>  btn-primary -->
             <button
                 v-if="editedComic.id"
                 type="button"
-                class="ml-2 btn btn-danger"
+                class="ml-2 btn fa-solid fa-trash"
                 @click="deleteComic"
             >
+            <!-- <i class="fa-solid fa-trash">btn-danger</i> -->
                 Xóa
             </button>
         </div>

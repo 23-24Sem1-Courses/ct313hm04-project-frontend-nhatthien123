@@ -1,4 +1,4 @@
-function addCommicService() {
+function createCommicService() {
     const baseUrl = '/api/comics';
     const headers = {
         'Content-Type': 'application/json',
@@ -44,4 +44,4 @@ function addCommicService() {
     };
 }
 
-export default addCommicService();
+export default createCommicService();

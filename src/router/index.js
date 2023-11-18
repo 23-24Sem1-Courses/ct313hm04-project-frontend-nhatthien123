@@ -1,10 +1,10 @@
 import { createWebHistory, createRouter } from 'vue-router';
-import ComicList from '@/views/ComicList.vue';
+import ComicBook from '@/views/ComicBook.vue';
 const routes = [
     {
-        path: '/',
-        name: 'comicList',
-        component: ComicList,
+        path: "/",
+        name: "comicbook",
+        component: ComicBook,
     },
     {
         path: '/:pathMatch(.*)*',
@@ -14,13 +14,13 @@ const routes = [
     {
         path: '/comics/:id',
         name: 'comic.edit',
-        component: () => import('@/views/ComicEdit.vue'),
+        component: () => import('@/views/EditComic.vue'),
         props: (route) => ({ comicId: route.params.id })
     },
     {
         path: '/comics/add',
         name: 'comic.add',
-        component: () => import('@/views/ComicAdd.vue'),
+        component: () => import('@/views/AddComic.vue'),
         
     },
 ];

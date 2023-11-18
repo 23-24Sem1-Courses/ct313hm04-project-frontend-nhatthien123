@@ -3,7 +3,7 @@
         <p>
             Oops, không thể tìm thấy trang. Trở về
             <router-link to="/">
-                trang chủ.
+                Trang chủ.
             </router-link>
         </p>
     </div>
